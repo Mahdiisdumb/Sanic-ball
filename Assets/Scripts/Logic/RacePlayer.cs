@@ -81,7 +81,7 @@ namespace Sanicball.Logic
         public ControlType CtrlType { get { return ball.CtrlType; } }
         public int Character { get { return ball.CharacterId; } }
         public Transform Transform { get { return ball.transform; } }
-        public float Speed { get { return ball.GetComponent<Rigidbody>().velocity.magnitude; } }
+        public float Speed { get { return ball.GetComponent<Rigidbody>().linearVelocity.magnitude; } }
         public IBallCamera Camera { get { return ballCamera; } }
 
         //Race progress properties
@@ -262,7 +262,7 @@ namespace Sanicball.Logic
         private void Ball_RespawnRequested(object sender, EventArgs e)
         {
             ball.transform.position = sr.checkpoints[currentCheckpointIndex].GetRespawnPoint() + Vector3.up * ball.transform.localScale.x * 0.5f;
-            ball.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            ball.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             ball.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             if (ballCamera != null)
             {

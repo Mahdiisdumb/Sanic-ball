@@ -67,9 +67,9 @@ namespace Sanicball.Gameplay
                 up = Vector3.Lerp(up, targetUp, Time.deltaTime * 100);
 
                 //Based on how fast the target is moving, create a rotation bending towards its velocity.
-                Quaternion towardsVelocity = (Target.velocity != Vector3.zero) ? Quaternion.LookRotation(Target.velocity, up) : Quaternion.identity;
+                Quaternion towardsVelocity = (Target.linearVelocity != Vector3.zero) ? Quaternion.LookRotation(Target.linearVelocity, up) : Quaternion.identity;
                 const float maxTrans = 20f;
-                Quaternion finalTargetDir = Quaternion.Slerp(currentDirection, towardsVelocity, Mathf.Max(0, Mathf.Min(-10 + Target.velocity.magnitude, maxTrans) / maxTrans));
+                Quaternion finalTargetDir = Quaternion.Slerp(currentDirection, towardsVelocity, Mathf.Max(0, Mathf.Min(-10 + Target.linearVelocity.magnitude, maxTrans) / maxTrans));
 
                 //Lerp towards the final rotation
                 currentDirection = Quaternion.Slerp(currentDirection, finalTargetDir, Time.deltaTime * 4);
@@ -82,7 +82,7 @@ namespace Sanicball.Gameplay
                 }
 
                 //Set camera FOV to get higher with more velocity
-                AttachedCamera.fieldOfView = Mathf.Lerp(AttachedCamera.fieldOfView, Mathf.Min(60f + (Target.velocity.magnitude), 100f), Time.deltaTime * 4);
+                AttachedCamera.fieldOfView = Mathf.Lerp(AttachedCamera.fieldOfView, Mathf.Min(60f + (Target.linearVelocity.magnitude), 100f), Time.deltaTime * 4);
 
                 currentDirectionWithOffset = Quaternion.Slerp(currentDirectionWithOffset, currentDirection * targetDirectionOffset, Time.deltaTime * 6);
                 transform.position = Target.transform.position + Vector3.up * orbitHeight + currentDirectionWithOffset * (Vector3.back * orbitDistance);

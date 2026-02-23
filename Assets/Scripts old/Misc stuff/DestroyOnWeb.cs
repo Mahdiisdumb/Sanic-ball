@@ -2,13 +2,11 @@
 
 public class DestroyOnWeb : MonoBehaviour
 {
-    // Use this for initialization
     private void Start()
     {
-        if (Application.platform == RuntimePlatform.WindowsWebPlayer ||
-            Application.platform == RuntimePlatform.OSXWebPlayer)
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }
