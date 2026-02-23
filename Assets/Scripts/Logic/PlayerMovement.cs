@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using Lidgren.Network;
 using SanicballCore;
 using UnityEngine;
@@ -7,7 +6,6 @@ using UnityEngine;
 namespace Sanicball.Logic
 {
     public class PlayerMovement
-
     {
         public Guid ClientGuid { get; private set; }
         public ControlType CtrlType { get; private set; }
@@ -30,40 +28,74 @@ namespace Sanicball.Logic
 
         public static PlayerMovement CreateFromPlayer(MatchPlayer player)
         {
-            Rigidbody rigidbody = player.BallObject.GetComponent<Rigidbody>();
+            Rigidbody rb = player.BallObject.GetComponent<Rigidbody>();
             return new PlayerMovement(
                 player.ClientGuid,
                 player.CtrlType,
                 player.BallObject.transform.position,
                 player.BallObject.transform.rotation,
-                rigidbody.linearVelocity,
-                rigidbody.angularVelocity,
+                rb.linearVelocity,
+                rb.angularVelocity,
                 player.BallObject.DirectionVector
-                );
+            );
         }
 
+        // --- NetBuffer helpers ---
         public void WriteToMessage(NetBuffer msg)
         {
-            msg.Write(ClientGuid);
+            msg.Write(ClientGuid.ToByteArray());
             msg.Write((byte)CtrlType);
-            msg.Write(Position);
-            msg.Write(Rotation);
-            msg.Write(Velocity);
-            msg.Write(AngularVelocity);
-            msg.Write(DirectionVector);
+            WriteVector3(msg, Position);
+            WriteQuaternion(msg, Rotation);
+            WriteVector3(msg, Velocity);
+            WriteVector3(msg, AngularVelocity);
+            WriteVector3(msg, DirectionVector);
         }
 
         public static PlayerMovement ReadFromMessage(NetBuffer msg)
         {
-            return new PlayerMovement(
-                msg.ReadGuid(),
-                (ControlType)msg.ReadByte(),
-                msg.ReadVector3(),
-                msg.ReadQuaternion(),
-                msg.ReadVector3(),
-                msg.ReadVector3(),
-                msg.ReadVector3()
-                );
+            Guid guid = new Guid(msg.ReadBytes(16));
+            ControlType ctrl = (ControlType)msg.ReadByte();
+            Vector3 pos = ReadVector3(msg);
+            Quaternion rot = ReadQuaternion(msg);
+            Vector3 vel = ReadVector3(msg);
+            Vector3 angVel = ReadVector3(msg);
+            Vector3 dir = ReadVector3(msg);
+
+            return new PlayerMovement(guid, ctrl, pos, rot, vel, angVel, dir);
+        }
+
+        // --- Vector3 / Quaternion serialization ---
+        private static void WriteVector3(NetBuffer msg, Vector3 v)
+        {
+            msg.Write(v.x);
+            msg.Write(v.y);
+            msg.Write(v.z);
+        }
+
+        private static Vector3 ReadVector3(NetBuffer msg)
+        {
+            float x = msg.ReadFloat();
+            float y = msg.ReadFloat();
+            float z = msg.ReadFloat();
+            return new Vector3(x, y, z);
+        }
+
+        private static void WriteQuaternion(NetBuffer msg, Quaternion q)
+        {
+            msg.Write(q.x);
+            msg.Write(q.y);
+            msg.Write(q.z);
+            msg.Write(q.w);
+        }
+
+        private static Quaternion ReadQuaternion(NetBuffer msg)
+        {
+            float x = msg.ReadFloat();
+            float y = msg.ReadFloat();
+            float z = msg.ReadFloat();
+            float w = msg.ReadFloat();
+            return new Quaternion(x, y, z, w);
         }
     }
 }

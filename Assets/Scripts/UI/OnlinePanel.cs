@@ -1,15 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
 using Lidgren.Network;
-using Sanicball.Logic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Net;
 
 namespace Sanicball.UI
 {
+    [Serializable]
+    public class ServerInfo
+    {
+        public string Name;
+        public int MaxPlayers;
+        public int CurrentPlayers;
+    }
+
     public class OnlinePanel : MonoBehaviour
     {
+        [Header("UI")]
         public Transform targetServerListContainer;
         public Text errorField;
         public Text serverCountField;
@@ -18,40 +26,18 @@ namespace Sanicball.UI
         public Selectable belowList;
 
         private List<ServerListItem> servers = new List<ServerListItem>();
-
-        //Stores server browser IPs, so they can be differentiated from LAN servers
-        private List<string> serverBrowserIPs = new List<string>();
-
         private NetClient discoveryClient;
-        private WWW serverBrowserRequester;
         private DateTime latestLocalRefreshTime;
-        private DateTime latestBrowserRefreshTime;
 
-        public void RefreshServers()
-        {
-            serverBrowserIPs.Clear();
-
-            discoveryClient.DiscoverLocalPeers(25000);
-            latestLocalRefreshTime = DateTime.Now;
-
-            serverBrowserRequester = new WWW("http://www.sanicball.com/servers/");
-
-            serverCountField.text = "0 servers";
-            errorField.enabled = false;
-
-            //Clear old servers
-            foreach (var serv in servers)
-            {
-                Destroy(serv.gameObject);
-            }
-            servers.Clear();
-        }
+        // Placeholder "online" list
+        private bool placeholderOnlineEnabled = true;
 
         private void Awake()
         {
             errorField.enabled = false;
 
-            NetPeerConfiguration config = new NetPeerConfiguration(OnlineMatchMessenger.APP_ID);
+            // LAN discovery
+            var config = new NetPeerConfiguration("SANICBAL_MAHDIISDUMBVER_LAN");
             config.EnableMessageType(NetIncomingMessageType.DiscoveryResponse);
             discoveryClient = new NetClient(config);
             discoveryClient.Start();
@@ -59,122 +45,146 @@ namespace Sanicball.UI
 
         private void Update()
         {
-            //Refresh on f5 (pretty nifty)
+            // Refresh on F5
             if (Input.GetKeyDown(KeyCode.F5))
             {
                 RefreshServers();
             }
 
-            //Check for response from the server browser requester
-            if (serverBrowserRequester != null && serverBrowserRequester.isDone)
-            {
-                if (string.IsNullOrEmpty(serverBrowserRequester.error))
-                {
-                    latestBrowserRefreshTime = DateTime.Now;
-
-                    string result = serverBrowserRequester.text;
-                    string[] entries = result.Split(new string[] { "<br>" }, StringSplitOptions.RemoveEmptyEntries);
-
-                    foreach (string entry in entries)
-                    {
-                        int seperationPoint = entry.LastIndexOf(':');
-                        string ip = entry.Substring(0, seperationPoint);
-                        string port = entry.Substring(seperationPoint + 1, entry.Length - (seperationPoint + 1));
-
-                        int portInt;
-                        if (int.TryParse(port, out portInt))
-                        {
-                            System.Threading.Thread discoverThread = new System.Threading.Thread(() => { discoveryClient.DiscoverKnownPeer(ip, portInt); });
-                            discoverThread.Start();
-                            serverBrowserIPs.Add(ip);
-                        }
-                    }
-                }
-                else
-                {
-                    Debug.LogError("Failed to receive servers - " + serverBrowserRequester.error);
-                }
-
-                serverBrowserRequester = null;
-            }
-
-            //Check for messages on the discovery client
+            // Check for LAN messages
             NetIncomingMessage msg;
             while ((msg = discoveryClient.ReadMessage()) != null)
             {
-                switch (msg.MessageType)
+                if (msg.MessageType == NetIncomingMessageType.DiscoveryResponse)
                 {
-                    case NetIncomingMessageType.DiscoveryResponse:
-                        ServerInfo info;
-                        try
-                        {
-                            info = Newtonsoft.Json.JsonConvert.DeserializeObject<ServerInfo>(msg.ReadString());
-                        }
-                        catch (Newtonsoft.Json.JsonException ex)
-                        {
-                            Debug.LogError("Failed to deserialize info for a server: " + ex.Message);
-                            continue;
-                        }
-
-                        //double timeDiff = (DateTime.UtcNow - info.Timestamp).TotalMilliseconds;
-                        bool isLocal = !serverBrowserIPs.Contains(msg.SenderEndPoint.Address.ToString());
-
-                        DateTime timeToCompareTo = isLocal ? latestLocalRefreshTime : latestBrowserRefreshTime;
-                        double timeDiff = (DateTime.Now - timeToCompareTo).TotalMilliseconds;
-
-                        var server = Instantiate(serverListItemPrefab);
-                        server.transform.SetParent(targetServerListContainer, false);
-                        server.Init(info, msg.SenderEndPoint, (int)timeDiff, isLocal);
-                        servers.Add(server);
-                        RefreshNavigation();
-
-                        serverCountField.text = servers.Count + (servers.Count == 1 ? " server" : " servers");
-
-                        break;
-
-                    default:
-                        Debug.Log("Server discovery client received an unhandled NetMessage (" + msg.MessageType + ")");
-                        break;
+                    AddServerFromMessage(msg, true);
+                }
+                else
+                {
+                    Debug.Log("Unhandled NetMessage: " + msg.MessageType);
                 }
             }
+
+            // Placeholder "online servers"
+            if (placeholderOnlineEnabled && servers.Count == 0)
+            {
+                AddPlaceholderServer("Placeholder Online Server", "127.0.0.1", 25001);
+                placeholderOnlineEnabled = false;
+            }
+        }
+
+        public void RefreshServers()
+        {
+            // Clear previous
+            foreach (var serv in servers)
+                Destroy(serv.gameObject);
+
+            servers.Clear();
+            errorField.enabled = false;
+            serverCountField.text = "0 servers";
+
+            // Start LAN discovery
+            latestLocalRefreshTime = DateTime.Now;
+            discoveryClient.DiscoverLocalPeers(25000);
+
+            // Reset placeholder
+            placeholderOnlineEnabled = true;
+        }
+
+        private void AddServerFromMessage(NetIncomingMessage msg, bool isLocal)
+        {
+            ServerInfo info;
+            try
+            {
+                info = Newtonsoft.Json.JsonConvert.DeserializeObject<ServerInfo>(msg.ReadString());
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("Failed to deserialize server info: " + ex.Message);
+                return;
+            }
+
+            var server = Instantiate(serverListItemPrefab);
+            server.transform.SetParent(targetServerListContainer, false);
+            server.Init(info, msg.SenderEndPoint, 0, isLocal);
+            servers.Add(server);
+
+            UpdateServerCountText();
+            RefreshNavigation();
+        }
+
+        private void AddPlaceholderServer(string name, string ip, int port)
+        {
+            var info = new ServerInfo
+            {
+                Name = name,
+                MaxPlayers = 8,
+                CurrentPlayers = 0
+            };
+
+            var endpoint = new IPEndPoint(IPAddress.Parse(ip), port);
+            var server = Instantiate(serverListItemPrefab);
+            server.transform.SetParent(targetServerListContainer, false);
+            server.Init(info, endpoint, 0, false);
+            servers.Add(server);
+
+            serverCountField.text = servers.Count + " servers (placeholder)";
+            RefreshNavigation();
         }
 
         private void RefreshNavigation()
         {
-            for (var i = 0; i < servers.Count; i++)
+            for (int i = 0; i < servers.Count; i++)
             {
                 var button = servers[i].GetComponent<Button>();
-                if (button)
+                if (!button) continue;
+
+                var nav = new Navigation() { mode = Navigation.Mode.Explicit };
+
+                // Up
+                if (i == 0)
                 {
-                    var nav = new Navigation() { mode = Navigation.Mode.Explicit };
-                    //Up navigation
-                    if (i == 0)
+                    nav.selectOnUp = aboveList;
+                    if (aboveList)
                     {
-                        nav.selectOnUp = aboveList;
                         var nav2 = aboveList.navigation;
                         nav2.selectOnDown = button;
                         aboveList.navigation = nav2;
                     }
-                    else
+                }
+                else
+                {
+                    nav.selectOnUp = servers[i - 1].GetComponent<Button>();
+                }
+
+                // Down
+                if (i == servers.Count - 1)
+                {
+                    nav.selectOnDown = belowList;
+                    if (belowList)
                     {
-                        nav.selectOnUp = servers[i - 1].GetComponent<Button>();
-                    }
-                    //Down navigation
-                    if (i == servers.Count - 1)
-                    {
-                        nav.selectOnDown = belowList;
                         var nav2 = belowList.navigation;
                         nav2.selectOnUp = button;
                         belowList.navigation = nav2;
                     }
-                    else
-                    {
-                        nav.selectOnDown = servers[i + 1].GetComponent<Button>();
-                    }
-
-                    button.navigation = nav;
                 }
+                else
+                {
+                    nav.selectOnDown = servers[i + 1].GetComponent<Button>();
+                }
+
+                button.navigation = nav;
             }
+        }
+
+        private void UpdateServerCountText()
+        {
+            serverCountField.text = servers.Count + (servers.Count == 1 ? " server" : " servers");
+        }
+
+        private void OnDestroy()
+        {
+            discoveryClient?.Shutdown("Panel destroyed");
         }
     }
 }
