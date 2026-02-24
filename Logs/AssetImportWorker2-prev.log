@@ -583,3 +583,133 @@ Received Import Request.
 Start importing Assets/Scenes/Track_Desert/Lightmap-0_comp_light.exr using Guid(ffa503bd0d0c5524faa09e7923fbcbb6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '838e8fea46635d2427345ee03ac95122') in 0.0137839 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 45.483618 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(ff27eb4e06c871e4c9cbfcfa778a5c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(ff27eb4e06c871e4c9cbfcfa778a5c3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '212b6f471a50f69f96efafa8f2dced5d') in 0.0006226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.682993 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(758ba1f2370d167409c4329f9a144088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(758ba1f2370d167409c4329f9a144088) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b782c7609d7a8214d52a23dc907c7b71') in 0.0006265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.963326 seconds.
+  path: Assets/Scripts/Gameplay
+  artifactKey: Guid(46db595f48953c64188427841a356631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay using Guid(46db595f48953c64188427841a356631) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b1c311f26cc023646be986daa3b0f4d4') in 0.0005601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.499542 seconds.
+  path: Assets/Scripts/Gameplay/SpeedTrail.cs
+  artifactKey: Guid(eff90930fb834e74cbbc36e9c9566cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/SpeedTrail.cs using Guid(eff90930fb834e74cbbc36e9c9566cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '933fe66934b6eb458977bbb1a3600245') in 0.0009534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.357249 seconds.
+  path: Assets/Scripts/Gameplay/PivotCamera.cs
+  artifactKey: Guid(8c50870e8d3245248904806564af88e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/PivotCamera.cs using Guid(8c50870e8d3245248904806564af88e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4efd738b59a545718cb0674c7a7c4d9e') in 0.0009601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.266408 seconds.
+  path: Assets/Scripts/Gameplay/LobbyPlatform.cs
+  artifactKey: Guid(571ce3babde09f042a6566b2b85bb3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/LobbyPlatform.cs using Guid(571ce3babde09f042a6566b2b85bb3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '665613d26ad5e7ffc4edf9895a05fc61') in 0.0006355 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.340663 seconds.
+  path: Assets/Scripts/Gameplay/LobbyCamera.cs
+  artifactKey: Guid(57a92ce16d0f3984eb6bc74deda6902f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/LobbyCamera.cs using Guid(57a92ce16d0f3984eb6bc74deda6902f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dd9f36259e3d1a26282f696ff8f8a55') in 0.0006153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.470329 seconds.
+  path: Assets/Scripts/Gameplay/IBallCamera.cs
+  artifactKey: Guid(b7599590ca4cade4da08e9b79c7f01a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/IBallCamera.cs using Guid(b7599590ca4cade4da08e9b79c7f01a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb42daaa5b073915d4175f6c02fda985') in 0.0005903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.309788 seconds.
+  path: Assets/Scripts/Gameplay/DriftySmoke.cs
+  artifactKey: Guid(233204b66dc9e1843974ab54d69d918f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/DriftySmoke.cs using Guid(233204b66dc9e1843974ab54d69d918f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25dec3d5a92d851795aef25d805e7e86') in 0.0011666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.300683 seconds.
+  path: Assets/Scripts/Gameplay/Checkpoint.cs
+  artifactKey: Guid(65e975c638aba9d40925b4e218e6bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/Checkpoint.cs using Guid(65e975c638aba9d40925b4e218e6bbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b01929b130d73d0eb814ae6ff96c2fcd') in 0.0006046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.692729 seconds.
+  path: Assets/Scripts/Gameplay/BoostPad.cs
+  artifactKey: Guid(ceb7483a616f2774d825dca4cd78ec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/BoostPad.cs using Guid(ceb7483a616f2774d825dca4cd78ec36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b80b45c87ab0258d8b92732556f6071f') in 0.0006055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.289786 seconds.
+  path: Assets/Scripts/Gameplay/BallControlInput.cs
+  artifactKey: Guid(c272ffb2337f3ce499a6952967bd7e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/BallControlInput.cs using Guid(c272ffb2337f3ce499a6952967bd7e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4d81b699b0ad5880291440da4a7f16a') in 0.0005816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.320752 seconds.
+  path: Assets/Scripts/Gameplay/BallControlAI.cs
+  artifactKey: Guid(7c068851b266dab478c776ec480a300c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/BallControlAI.cs using Guid(7c068851b266dab478c776ec480a300c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ddb4b1d7f9e3d86f34895e9a39ded715') in 0.000694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.340599 seconds.
+  path: Assets/Scripts/Gameplay/Ball.cs
+  artifactKey: Guid(37a4f7748ec78204287c51e6de3db913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gameplay/Ball.cs using Guid(37a4f7748ec78204287c51e6de3db913) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e097d6b14067899153a10ed56ba32c2f') in 0.00064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 230.489038 seconds.
+  path: Assets/Art/Characters/01 Sanic/SanicIcon.png
+  artifactKey: Guid(45106eab8e7289244b88d1cb65eee2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Characters/01 Sanic/SanicIcon.png using Guid(45106eab8e7289244b88d1cb65eee2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8a392350a968e5ee3ff4c751837734f') in 0.0619999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (0 B). Loaded Objects now: 1335.
+Memory consumption went from 88.0 MB to 88.0 MB.
+Total: 5.541700 ms (FindLiveObjects: 0.077800 ms CreateObjectMapping: 0.026000 ms MarkObjects: 5.416000 ms  DeleteObjects: 0.021200 ms)
+
+Prepare: number of updated asset objects reloaded= 0

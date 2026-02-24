@@ -535,3 +535,7 @@ Received Import Request.
 Start importing Assets/Art/Characters/07 Asspio/Asspio.mat using Guid(02a6a5afb08f3a043940c8f1aaed2615) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f97559fb3d7b3aeeaf78d93e3daeb3bf') in 0.0113861 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

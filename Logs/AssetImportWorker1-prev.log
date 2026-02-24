@@ -543,3 +543,13 @@ Received Import Request.
 Start importing Assets/Scenes/Lobby/LightmapNear-0.exr using Guid(263a4278503f67f46af3fb109e89dd70) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '420518c596f12d4ab473b613a82a7ebf') in 0.019665 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1327.
+Memory consumption went from 87.2 MB to 87.2 MB.
+Total: 5.231700 ms (FindLiveObjects: 0.082900 ms CreateObjectMapping: 0.022300 ms MarkObjects: 5.122400 ms  DeleteObjects: 0.003400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
