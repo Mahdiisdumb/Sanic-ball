@@ -2,55 +2,47 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Sanicball</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
-  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
   <div id="unity-container">
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+    <canvas id="unity-canvas" width="960" height="600" tabindex="-1"></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
         <div id="unity-progress-bar-full"></div>
       </div>
+      <div id="unity-progress-text">0%</div>
     </div>
     <div id="unity-warning"> </div>
   </div>
 
+  <!-- Unity loader script (must be included) -->
+  <script src="Build/WebGL.loader.js"></script>
+
   <script>
-    var container = document.querySelector("#unity-container");
-    var canvas = document.querySelector("#unity-canvas");
-    var loadingBar = document.querySelector("#unity-loading-bar");
-    var progressBarFull = document.querySelector("#unity-progress-bar-full");
-    var warningBanner = document.querySelector("#unity-warning");
+    var canvas = document.getElementById("unity-canvas");
+    var loadingBar = document.getElementById("unity-loading-bar");
+    var progressBarFull = document.getElementById("unity-progress-bar-full");
+    var progressText = document.getElementById("unity-progress-text");
+    var warningBanner = document.getElementById("unity-warning");
 
     function unityShowBanner(msg, type) {
-      function updateBannerVisibility() {
-        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
-      }
       var div = document.createElement('div');
       div.innerHTML = msg;
       warningBanner.appendChild(div);
-      if (type == 'error') div.style = 'background: red; padding: 10px;';
-      else {
-        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
-        setTimeout(function() {
-          warningBanner.removeChild(div);
-          updateBannerVisibility();
-        }, 5000);
-      }
-      updateBannerVisibility();
+      if (type === 'error') div.style = 'background:red;padding:10px;';
+      else if (type === 'warning') div.style = 'background:yellow;padding:10px;';
+      setTimeout(() => { warningBanner.removeChild(div); }, 5000);
     }
 
-    // Split-file loader for 0-based part files (00,01,02,03)
     async function loadUnityWithParts() {
-      const totalParts = 4; // 00, 01, 02, 03
+      const totalParts = 4; // 00,01,02,03
       const partFiles = [];
       for (let i = 0; i < totalParts; i++) {
-        const index = i.toString().padStart(2,'0'); // 00, 01, ...
+        const index = i.toString().padStart(2,'0');
         partFiles.push("Build/WebGL.data.part" + index);
       }
 
@@ -70,7 +62,6 @@
       }
 
       const config = {
-        arguments: [],
         dataUrl: URL.createObjectURL(new Blob([combined.buffer])),
         frameworkUrl: "Build/WebGL.framework.js",
         codeUrl: "Build/WebGL.wasm",
@@ -82,24 +73,17 @@
       };
 
       loadingBar.style.display = "block";
-      createUnityInstance(canvas, config, (progress) => {
+
+      // Use Unity's createUnityInstance (loader script must be included above)
+      createUnityInstance(canvas, config, function(progress) {
         progressBarFull.style.width = 100 * progress + "%";
-      }).then((unityInstance) => {
+        progressText.innerText = Math.round(progress * 100) + "%";
+      }).then(unityInstance => {
         loadingBar.style.display = "none";
-      }).catch((message) => {
-        alert(message);
-      });
+      }).catch(err => alert(err));
     }
 
     loadUnityWithParts().catch(err => console.error(err));
-
-    // Mobile viewport fix
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      var meta = document.createElement('meta');
-      meta.name = 'viewport';
-      meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-      document.getElementsByTagName('head')[0].appendChild(meta);
-    }
   </script>
 </body>
 </html>
