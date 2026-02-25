@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 28.896727, y: 14.4517565, z: -18.614693}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1599,7 +1599,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.0019312446, y: -0.99373496, z: 0.1095646, w: -0.018791342}
     speed: 2
-    m_Value: {x: 0.09178004, y: -0.21862532, z: -0.020519381, w: -0.9712013}
+    m_Value: {x: 0.0019312446, y: 0.9937349, z: -0.1095646, w: 0.018791342}
   m_Size:
     m_Target: 10
     speed: 2
@@ -1872,7 +1872,7 @@ MonoBehaviour:
       m_Data: 29000
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 23560
+    - m_Data: 26242
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1905,7 +1905,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 23560
+    - m_Data: 26242
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
