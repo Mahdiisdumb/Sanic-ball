@@ -17,6 +17,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
+.vercel
 
 
 # Unity3D generated meta files
@@ -24,4 +25,3 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
-/REL/WebGL

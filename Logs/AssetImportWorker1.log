@@ -1,11 +1,11 @@
-[Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi" at "2026-02-25T02:14:26.9572215Z"
 Built from '6000.3/staging' branch; Version is '6000.3.9f1 (7a9955a4f2fa) revision 8034645'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::Module] Trying to connect to existing licensing client channel...
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32635 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-02-25T02:14:26Z
+Date: 2026-02-25T03:17:12Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi" at "2026-02-25T03:17:12.837488Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/Mahdi/source/repos/Sanic-ball
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57514
+55970
 -licensingIpc
 LicenseClient-Mahdi
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/Mahdi/source/repos/Sanic-ball
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [11096]  Target information:
+Player connection [25380]  Target information:
 
-Player connection [11096]  * "[IP] 192.168.1.178 [Port] 0 [Flags] 2 [Guid] 1521896541 [EditorId] 1521896541 [Version] 1048832 [Id] WindowsEditor(7,MahdisCurcitBoard) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25380]  * "[IP] 192.168.1.178 [Port] 0 [Flags] 2 [Guid] 1097406373 [EditorId] 1097406373 [Version] 1048832 [Id] WindowsEditor(7,MahdisCurcitBoard) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11096] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [11096] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25380] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25380] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -100,7 +100,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -108,14 +108,14 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/E
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              5141dfec566c4aa0adcb3bf9acba3aa5
-  Correlation Id:          f10befc5c11463ad5475eb522129eb62
-  External correlation Id: 6080487390586021695
+  Session Id:              abee1fb8222d419a879e633fd58db276
+  Correlation Id:          3cd8f565141f49bf4e441bf6bb00ee21
+  External correlation Id: 7058906251013040041
   Machine Id:              vS4E38ic1MYhv5YD3rXNQePWmPQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Mahdi" (connect: 0.00s, validation: 0.00s, handshake: 1.46s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi-notifications" at "2026-02-25T02:14:28.4173852Z"
-[Licensing::Module] Licensing Background thread has ended after 1.46s
-[Licensing::Module] Licensing is initialized (took 0.65s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Mahdi" (connect: 0.00s, validation: 0.00s, handshake: 1.57s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi-notifications" at "2026-02-25T03:17:14.4088418Z"
+[Licensing::Module] Licensing Background thread has ended after 1.57s
+[Licensing::Module] Licensing is initialized (took 0.76s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2475253255278-UnityPersXXXX
@@ -123,42 +123,42 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/E
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.658565 seconds.
-- Loaded All Assemblies, in  1.090 seconds
+Registered in 0.762909 seconds.
+- Loaded All Assemblies, in  1.211 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 307 ms
+Android Extension - Scanning For ADB Devices 407 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.802 seconds
-Domain Reload Profiling: 1887ms
-	BeginReloadAssembly (130ms)
+- Finished resetting the current domain, in  0.934 seconds
+Domain Reload Profiling: 2139ms
+	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (713ms)
-	LoadAllAssembliesAndSetupDomain (187ms)
-		LoadAssemblies (124ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (817ms)
+	LoadAllAssembliesAndSetupDomain (196ms)
+		LoadAssemblies (118ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (183ms)
-			TypeCache.Refresh (182ms)
-				TypeCache.ScanAssembly (168ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (190ms)
+				TypeCache.ScanAssembly (175ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (802ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (934ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (762ms)
+		SetupLoadedEditorAssemblies (893ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (419ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (94ms)
-			ProcessInitializeOnLoadAttributes (165ms)
+			InitializePlatformSupportModulesInManaged (539ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (169ms)
 			ProcessInitializeOnLoadMethodAttributes (79ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -169,65 +169,226 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.549 seconds
+- Loaded All Assemblies, in  0.445 seconds
 OnLevelWasLoaded was found on MatchManager
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff9c175235e (Unity) StackWalker::ShowCallstack
+0x00007ff9c2f86649 (Unity) PlatformStacktrace::GetStacktrace
+0x00007ff9c2f86ece (Unity) Stacktrace::GetStacktrace
+0x00007ff9c1702dbf (Unity) DebugStringToFile
+0x00007ff9c1e76c35 (Unity) PopulateMethods
+0x00007ff9c1e6c4fa (Unity) CreateMonoScriptCache
+0x00007ff9c1e6ddeb (Unity) FindOrCreateMonoScriptCache
+0x00007ff9c1e76ff7 (Unity) MonoScript::RebuildFromAwake
+0x00007ff9c1e68041 (Unity) MonoScript::AwakeFromLoad
+0x00007ff9c3f74351 (Unity) ScriptFactory::BatchRegisterAndCreateObjects
+0x00007ff9c3f783f1 (Unity) ScriptFactory::ProcessCurrentScripts
+0x00007ff9c3f705cc (Unity) TransientArtifactCoordinatorWorker::ProcessCurrentScriptAssets
+0x00007ff9c3f10b78 (Unity) AssetImportWorkerClient::RegisterTransientArtifacts
+0x00007ff9c3f02e51 (Unity) <lambda_ee9ac4533b064b5365ceb7395ab9dcd3>::operator()
+0x00007ff9c3f410bf (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff9c3f2e9b1 (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff9c3f2fb9e (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff9c3f3f729 (Unity) IOService::Run
+0x00007ff9c3f122ef (Unity) AssetImportWorkerClient::Run
+0x00007ff9c3ed64b8 (Unity) RunAssetImportWorkerClientV2
+0x00007ff9c3ed652b (Unity) RunAssetImporterV2
+0x00007ff9c27b78ff (Unity) Application::InitializeProject
+0x00007ff9c25ad003 (Unity) UnityMain
+0x00007ff7d2fd2f2a (Unity) __scrt_common_main_seh
+0x00007ffab016e8d7 (KERNEL32) BaseThreadInitThunk
+0x00007ffab162c40c (ntdll) RtlUserThreadStart
+
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 OnLevelWasLoaded was found on MatchManager
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+0x00007ff9c175235e (Unity) StackWalker::ShowCallstack
+0x00007ff9c2f86649 (Unity) PlatformStacktrace::GetStacktrace
+0x00007ff9c2f86ece (Unity) Stacktrace::GetStacktrace
+0x00007ff9c1702dbf (Unity) DebugStringToFile
+0x00007ff9c1e76c35 (Unity) PopulateMethods
+0x00007ff9c1e6c4fa (Unity) CreateMonoScriptCache
+0x00007ff9c1e6ddeb (Unity) FindOrCreateMonoScriptCache
+0x00007ff9c1e776a2 (Unity) MonoScript::Renew
+0x00007ff9c1e76d83 (Unity) MonoScript::Rebuild
+0x00007ff9c1ea4c54 (Unity) RebuildAllScriptCaches
+0x00007ff9c1e9f151 (Unity) MonoManager::FinalizeReload
+0x00007ff9c3e37c24 (Unity) ScriptingInitializer::FinalizeReload
+0x00007ff9c3f02e56 (Unity) <lambda_ee9ac4533b064b5365ceb7395ab9dcd3>::operator()
+0x00007ff9c3f410bf (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff9c3f2e9b1 (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff9c3f2fb9e (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff9c3f3f729 (Unity) IOService::Run
+0x00007ff9c3f122ef (Unity) AssetImportWorkerClient::Run
+0x00007ff9c3ed64b8 (Unity) RunAssetImportWorkerClientV2
+0x00007ff9c3ed652b (Unity) RunAssetImporterV2
+0x00007ff9c27b78ff (Unity) Application::InitializeProject
+0x00007ff9c25ad003 (Unity) UnityMain
+0x00007ff7d2fd2f2a (Unity) __scrt_common_main_seh
+0x00007ffab016e8d7 (KERNEL32) BaseThreadInitThunk
+0x00007ffab162c40c (ntdll) RtlUserThreadStart
+
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.566 seconds
-Domain Reload Profiling: 1105ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.435 seconds
+Domain Reload Profiling: 873ms
+	BeginReloadAssembly (177ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (255ms)
-		LoadAssemblies (288ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (212ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (64ms)
-			TypeCache.Refresh (45ms)
-				TypeCache.ScanAssembly (31ms)
-			BuildScriptInfoCaches (9ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (566ms)
+		AnalyzeDomain (40ms)
+			TypeCache.Refresh (29ms)
+				TypeCache.ScanAssembly (20ms)
+			BuildScriptInfoCaches (5ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (435ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (411ms)
+		SetupLoadedEditorAssemblies (310ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
+			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (157ms)
-			ProcessInitializeOnLoadAttributes (180ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+		AwakeInstancesAfterBackupRestoration (13ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 700 unused Assets / (308.5 KB). Loaded Objects now: 1379.
-Memory consumption went from 88.1 MB to 87.8 MB.
-Total: 7.468500 ms (FindLiveObjects: 0.213200 ms CreateObjectMapping: 0.047800 ms MarkObjects: 6.833100 ms  DeleteObjects: 0.373300 ms)
+Unloading 700 unused Assets / (178.4 KB). Loaded Objects now: 1379.
+Memory consumption went from 89.7 MB to 89.6 MB.
+Total: 6.619800 ms (FindLiveObjects: 0.197200 ms CreateObjectMapping: 0.107800 ms MarkObjects: 6.074900 ms  DeleteObjects: 0.238800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1951.054514 seconds.
-  path: Assets/Art/Easter eggs/Super Sand/SuperSand.mat
-  artifactKey: Guid(38a419f08966e214f9b346753fc45b4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Easter eggs/Super Sand/SuperSand.mat using Guid(38a419f08966e214f9b346753fc45b4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2cc163f7e7621a8788cd13f8392b504') in 0.1275681 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 3245.202616 seconds.
+  path: Assets/Sound/Sfx/rang.wav
+  artifactKey: Guid(c0ffcb9f860cd1043ad43f7041e2ee3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/rang.wav using Guid(c0ffcb9f860cd1043ad43f7041e2ee3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '16dbec6d026c179bcca574c167a2b8b2') in 0.1053984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sound/Sfx/countdown1.wav
+  artifactKey: Guid(bfe04f2f48be9344cbc9d35af6f2837b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/countdown1.wav using Guid(bfe04f2f48be9344cbc9d35af6f2837b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62cdc85ff1ace088d45ffb48ba6e7406') in 0.0237133 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sound/Music/Lobby/GreenHillZone.ogg
+  artifactKey: Guid(65bc1dc0818c22b4e8857068055157b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/Lobby/GreenHillZone.ogg using Guid(65bc1dc0818c22b4e8857068055157b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7d603cda556e322a3643bee3a54a1c5f') in 0.0231528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sound/Music/Ingame/08_RollingStart.ogg
+  artifactKey: Guid(d23cf9326a1ddb14ebd6b635fa272c81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/Ingame/08_RollingStart.ogg using Guid(d23cf9326a1ddb14ebd6b635fa272c81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9580561c29c53a92e688a8d9598eccf') in 0.0274172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sound/Music/OldLobbyMusic.ogg
+  artifactKey: Guid(9e8e4269d469b024f9e875086c8e4cfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/OldLobbyMusic.ogg using Guid(9e8e4269d469b024f9e875086c8e4cfd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a7898751d8d34d540bda900a4136c7ad') in 0.0215199 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sound/Music/Dread.ogg
+  artifactKey: Guid(4b762afc59ab67f46a8a8b2b5517bd27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/Dread.ogg using Guid(4b762afc59ab67f46a8a8b2b5517bd27) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '212d230988b40dde4b1cbc52343851f5') in 0.0215409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sound/Music/Bangarang.ogg
+  artifactKey: Guid(65eed12773deb844185037ac6ee1ebff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/Bangarang.ogg using Guid(65eed12773deb844185037ac6ee1ebff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '985e243e8ce58da4474c3241d0b4044a') in 0.0205362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sound/Sfx/countdown2.wav
+  artifactKey: Guid(e00c307cf0885eb4d91cb342786e33d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/countdown2.wav using Guid(e00c307cf0885eb4d91cb342786e33d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1b0d29c4dbe69af522a3bbe7e801903') in 0.0238032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sound/Sfx/checkpoint.mp3
+  artifactKey: Guid(0c031ed40c4a2ef42bd63ebdd6bc273f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/checkpoint.mp3 using Guid(0c031ed40c4a2ef42bd63ebdd6bc273f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '38066996d9bbdf69d75dc8799146b8f3') in 0.0202144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sound/Sfx/waterfall.wav
+  artifactKey: Guid(05ae748c5e4d4b4469ad3f30bde1edad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/waterfall.wav using Guid(05ae748c5e4d4b4469ad3f30bde1edad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b438f9f597952b7a9b249300bfca2a05') in 0.0137293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sound/Sfx/wind.ogg
+  artifactKey: Guid(6864b642d4c0f5b4283f26612c74aaef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/wind.ogg using Guid(6864b642d4c0f5b4283f26612c74aaef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '218304ab41e8ef5e34957a7057e1ad98') in 0.0127346 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sound/Sfx/jump.mp3
+  artifactKey: Guid(f0af43db82807c241a23c2d5c731412a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/jump.mp3 using Guid(f0af43db82807c241a23c2d5c731412a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '463889c34601415804c983a1f64f0d63') in 0.0235685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sound/Music/Ingame/11_Katamari.ogg
+  artifactKey: Guid(8b1be8e83aad861459e1577652dd3ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Music/Ingame/11_Katamari.ogg using Guid(8b1be8e83aad861459e1577652dd3ec3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '168f15e66d070b1b14f98bf70d18718e') in 0.019493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sound/Sfx/speedboost.wav
+  artifactKey: Guid(97f74ee61962a04469775af639cee941) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sound/Sfx/speedboost.wav using Guid(97f74ee61962a04469775af639cee941) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e6131d90bb1c74d16e4f7029eba6bbf') in 0.0221834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
