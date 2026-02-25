@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.9f1 (7a9955a4f2fa) revision 8034645'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi" at "2026-02-25T01:54:02.5744167Z"
 OS: 'Windows 11  (10.0.26200) Professional' Language: 'en' Physical Memory: 32635 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi" at "2026-02-24T20:47:37.1300453Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-02-24T20:47:37Z
+Date: 2026-02-25T01:54:02Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.9f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/Users/Mahdi/source/repos/Sanic-ball
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64206
+64077
 -licensingIpc
 LicenseClient-Mahdi
 -job-worker-count
@@ -67,12 +67,12 @@ C:/Users/Mahdi/source/repos/Sanic-ball
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [25216]  Target information:
+Player connection [15092]  Target information:
 
-Player connection [25216]  * "[IP] 192.168.1.178 [Port] 0 [Flags] 2 [Guid] 3867372912 [EditorId] 3867372912 [Version] 1048832 [Id] WindowsEditor(7,MahdisCurcitBoard) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [15092]  * "[IP] 192.168.1.178 [Port] 0 [Flags] 2 [Guid] 783407042 [EditorId] 783407042 [Version] 1048832 [Id] WindowsEditor(7,MahdisCurcitBoard) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [25216] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [25216] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15092] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [15092] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -100,7 +100,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -108,14 +108,14 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/E
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              38ca0aa2b7734dc6b98080e4dc66937b
-  Correlation Id:          23be7acb1454e1149335a388cb50327f
-  External correlation Id: 7176380071005920706
+  Session Id:              adc5c51de5824cf3a526d7263ce645f1
+  Correlation Id:          f10befc5c11463ad5475eb522129eb62
+  External correlation Id: 6548591036373245295
   Machine Id:              vS4E38ic1MYhv5YD3rXNQePWmPQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Mahdi" (connect: 0.00s, validation: 0.00s, handshake: 1.34s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi-notifications" at "2026-02-24T20:47:38.4708423Z"
-[Licensing::Module] Licensing Background thread has ended after 1.34s
-[Licensing::Module] Licensing is initialized (took 0.45s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Mahdi" (connect: 0.00s, validation: 0.00s, handshake: 2.94s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Mahdi-notifications" at "2026-02-25T01:54:05.5216946Z"
+[Licensing::Module] Licensing Background thread has ended after 2.95s
+[Licensing::Module] Licensing is initialized (took 0.62s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 2475253255278-UnityPersXXXX
@@ -123,43 +123,43 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/E
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.451723 seconds.
-- Loaded All Assemblies, in  0.904 seconds
+Registered in 0.642263 seconds.
+- Loaded All Assemblies, in  1.409 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 336 ms
+Android Extension - Scanning For ADB Devices 473 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.852 seconds
-Domain Reload Profiling: 1751ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  1.160 seconds
+Domain Reload Profiling: 2564ms
+	BeginReloadAssembly (256ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (514ms)
-	LoadAllAssembliesAndSetupDomain (203ms)
-		LoadAssemblies (122ms)
+	RebuildCommonClasses (87ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (737ms)
+	LoadAllAssembliesAndSetupDomain (293ms)
+		LoadAssemblies (247ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (199ms)
-			TypeCache.Refresh (197ms)
-				TypeCache.ScanAssembly (182ms)
+		AnalyzeDomain (287ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (262ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (853ms)
+	FinalizeReload (1160ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (813ms)
+		SetupLoadedEditorAssemblies (1109ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (457ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (95ms)
-			ProcessInitializeOnLoadAttributes (175ms)
-			ProcessInitializeOnLoadMethodAttributes (81ms)
+			InitializePlatformSupportModulesInManaged (627ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (232ms)
+			ProcessInitializeOnLoadMethodAttributes (106ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -169,7 +169,7 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.506 seconds
+- Loaded All Assemblies, in  0.596 seconds
 OnLevelWasLoaded was found on MatchManager
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -182,357 +182,221 @@ Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.461 seconds
-Domain Reload Profiling: 961ms
-	BeginReloadAssembly (197ms)
+- Finished resetting the current domain, in  0.725 seconds
+Domain Reload Profiling: 1314ms
+	BeginReloadAssembly (221ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (44ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (212ms)
-		LoadAssemblies (251ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (250ms)
+		LoadAssemblies (296ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (53ms)
-			TypeCache.Refresh (40ms)
-				TypeCache.ScanAssembly (28ms)
-			BuildScriptInfoCaches (6ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (461ms)
+		AnalyzeDomain (59ms)
+			TypeCache.Refresh (37ms)
+				TypeCache.ScanAssembly (25ms)
+			BuildScriptInfoCaches (8ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (725ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (328ms)
+		SetupLoadedEditorAssemblies (547ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (15ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (113ms)
-			ProcessInitializeOnLoadAttributes (152ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (204ms)
+			ProcessInitializeOnLoadAttributes (244ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (16ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 646 unused Assets / (205.3 KB). Loaded Objects now: 1325.
-Memory consumption went from 87.0 MB to 86.8 MB.
-Total: 6.165300 ms (FindLiveObjects: 0.110800 ms CreateObjectMapping: 0.056800 ms MarkObjects: 5.703100 ms  DeleteObjects: 0.292900 ms)
+Unloading 700 unused Assets / (218.3 KB). Loaded Objects now: 1379.
+Memory consumption went from 88.3 MB to 88.1 MB.
+Total: 9.243800 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.141500 ms MarkObjects: 8.458600 ms  DeleteObjects: 0.391600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14477.974799 seconds.
-  path: Assets/Art/Easter eggs/Picnic/Materials/Vase.mat
-  artifactKey: Guid(639655cb59b20de4a953d97c612018a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Easter eggs/Picnic/Materials/Vase.mat using Guid(639655cb59b20de4a953d97c612018a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f600d7aa1ed78f815126c819d97b5632') in 0.1433702 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Art/Characters/02 Knackles/Knackles.mat
-  artifactKey: Guid(06f88fe9a59efb148aee81770af439ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Characters/02 Knackles/Knackles.mat using Guid(06f88fe9a59efb148aee81770af439ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92c81b89d7e8cf304dfd3e74674f9dab') in 0.0082828 seconds
+  Time since last request: 729.021017 seconds.
+  path: Assets/Art/Gameplay/Podium/Gold.mat
+  artifactKey: Guid(f610cd3434c693045b033a486f241e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Gameplay/Podium/Gold.mat using Guid(f610cd3434c693045b033a486f241e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09c76c8f71cb057ed55d41048fbaf30e') in 0.1397285 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scenes/Lobby/Lightmap-1_comp_light.exr
-  artifactKey: Guid(f44817bfcb5b9954a881ee823b71273b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/Lightmap-1_comp_light.exr using Guid(f44817bfcb5b9954a881ee823b71273b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b915e293fea3586c2d3bc435f0c81cb') in 0.0799531 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000020 seconds.
+  path: Assets/Art/Characters/05 Shedew/Shedew.mat
+  artifactKey: Guid(5d66e63183aa4cf4882213543bfb2a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/05 Shedew/Shedew.mat using Guid(5d66e63183aa4cf4882213543bfb2a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8d0cc7b8363ea98653365e663d6d0593') in 0.0082724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Art/Environment/Menu/Materials/WhiteFade.mat
-  artifactKey: Guid(8c6dc08585a38f34e9d01880f3d8658f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Environment/Menu/Materials/WhiteFade.mat using Guid(8c6dc08585a38f34e9d01880f3d8658f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0236ab0ef378c35f33722e09a1a50868') in 0.0444627 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Characters/00 Unknown Ball/UnknownBall.mat
+  artifactKey: Guid(0b529f7695cc1b348a28421770854ae1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/00 Unknown Ball/UnknownBall.mat using Guid(0b529f7695cc1b348a28421770854ae1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a22f502a50d3dfbebf0a4357e485e337') in 0.0229883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Scenes/Lobby/LightmapNear-4.exr
-  artifactKey: Guid(0243cef6ced5a864ebead45238d01f5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/LightmapNear-4.exr using Guid(0243cef6ced5a864ebead45238d01f5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ff9b75f192ac5d75f7136021db08d792') in 0.0211607 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Characters/02 Knackles/Knackles.mat
+  artifactKey: Guid(06f88fe9a59efb148aee81770af439ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/02 Knackles/Knackles.mat using Guid(06f88fe9a59efb148aee81770af439ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '25a6a18d0087f0fbf2fa9bf74ba4b3c3') in 0.0131284 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Scenes/Track_SnowyMountain/ReflectionProbe-8.exr
-  artifactKey: Guid(9289f920e3f4e444da5dbc60bdc5b790) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_SnowyMountain/ReflectionProbe-8.exr using Guid(9289f920e3f4e444da5dbc60bdc5b790) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8b2372ac32c72c132fb290242ec1393') in 0.0133624 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Characters/08 Big da Cat/Big.mat
+  artifactKey: Guid(2c887576be9cb3946b21daf53b2d674d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/08 Big da Cat/Big.mat using Guid(2c887576be9cb3946b21daf53b2d674d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b1d584c7a84d74da6b6879da50a6712') in 0.0090507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Scenes/Track_SnowyMountain/ReflectionProbe-4.exr
-  artifactKey: Guid(7313691d634095240b5e51e2fb68baf0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_SnowyMountain/ReflectionProbe-4.exr using Guid(7313691d634095240b5e51e2fb68baf0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11798d2c355c156b84451bc834018a83') in 0.0109253 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/CasinoParkTest/ReflectionProbe-0.exr
+  artifactKey: Guid(e4aeab72edb680b4b80d776d570ec782) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/CasinoParkTest/ReflectionProbe-0.exr using Guid(e4aeab72edb680b4b80d776d570ec782) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5de32b36b5ac52bcdf8687641321f4c8') in 0.0550601 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000042 seconds.
-  path: Assets/Scenes/Track_GreenHillZone/ReflectionProbe-8.exr
-  artifactKey: Guid(93f92aa898fe0054099a54602dae4aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_GreenHillZone/ReflectionProbe-8.exr using Guid(93f92aa898fe0054099a54602dae4aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ca36b47ce44c04d95c1b13cd17ad8273') in 0.0093361 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/Materials/Dirt2.mat
+  artifactKey: Guid(d7e2c3a0398210c43b7e3609ffea18da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materials/Dirt2.mat using Guid(d7e2c3a0398210c43b7e3609ffea18da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '24e72a7a69dc9fa9d3e911f192a6373b') in 0.0108884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Prefabs/User Interface/LocalPlayerPanel.prefab
-  artifactKey: Guid(f468d0545ff98d449afb2f8e153d278f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Prefabs/User Interface/LocalPlayerPanel.prefab using Guid(f468d0545ff98d449afb2f8e153d278f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4ae3641e5a22a6171d6810b3c9aca216') in 0.0519696 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 91
+  Time since last request: 0.000019 seconds.
+  path: Assets/Art/Characters/09 Dr Aggmen/Aggmen.mat
+  artifactKey: Guid(a36342b584faa744da5236e2a73b4b3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/09 Dr Aggmen/Aggmen.mat using Guid(a36342b584faa744da5236e2a73b4b3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f7315e265bbf2dc2b824d066a0f806a') in 0.0084744 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Art/Gameplay/Podium/Podium.mat
-  artifactKey: Guid(2a5223a3a53b74741afc7331822f53cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Gameplay/Podium/Podium.mat using Guid(2a5223a3a53b74741afc7331822f53cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1eb2e9063113b7632371bdb907f5f425') in 0.0050924 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Characters/99 Super Sanic/SuperSanic.mat
+  artifactKey: Guid(ed9afe70cddfa64429bbcb920fa979f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/99 Super Sanic/SuperSanic.mat using Guid(ed9afe70cddfa64429bbcb920fa979f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '806f4204982ce4be3147f5d4fd658cb7') in 0.00812 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Scenes/Track_GreenHillZone/Lightmap-7_comp_light.exr
-  artifactKey: Guid(271d80a061e52074eb510a58b5cd53f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_GreenHillZone/Lightmap-7_comp_light.exr using Guid(271d80a061e52074eb510a58b5cd53f6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04576dd9f4c94ea6a233cd15d22ee5ad') in 0.1273579 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Assemblies/SanicballCore.dll
-  artifactKey: Guid(958765f3617d4f840aea8d8007209ec0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assemblies/SanicballCore.dll using Guid(958765f3617d4f840aea8d8007209ec0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9667a718ebfce681727c8ca56767193d') in 0.0109247 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/Scenes/Track_SnowyMountain/ReflectionProbe-7.exr
-  artifactKey: Guid(cd60e8adcf27eb149b9ef55ec12e1a51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_SnowyMountain/ReflectionProbe-7.exr using Guid(cd60e8adcf27eb149b9ef55ec12e1a51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '893994f53bb59dfcbceb2dd1f5c03f43') in 0.0120646 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scenes/Lobby/LightmapFar-1.exr
-  artifactKey: Guid(20a7243e4e4c65443ae4272c84694abd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/LightmapFar-1.exr using Guid(20a7243e4e4c65443ae4272c84694abd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '049163101690e77e0962999a30fb3728') in 0.0207485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/Gameplay/Finish line banner/Materials/FinishlinePole.mat
+  artifactKey: Guid(1b573b2f84360454fbcd9237d9131b7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Gameplay/Finish line banner/Materials/FinishlinePole.mat using Guid(1b573b2f84360454fbcd9237d9131b7c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a1b69eb8c115b631600c5f874ef610b') in 0.0106312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Scenes/Lobby/LightmapFar-4.exr
-  artifactKey: Guid(53c7a7d7baabb2a4cb3b7289a397f1bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/LightmapFar-4.exr using Guid(53c7a7d7baabb2a4cb3b7289a397f1bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a2c773f7ecd279cbe94adde1346714ec') in 0.0252179 seconds
+  path: Assets/Scenes/CasinoParkTest/LightingData.asset
+  artifactKey: Guid(91fb718535177bf42a19fabaff73270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/CasinoParkTest/LightingData.asset using Guid(91fb718535177bf42a19fabaff73270a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '736c44cac5e247ee2ac4e1eb22cb317a') in 0.0074786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scenes/CasinoParkTest.unity
+  artifactKey: Guid(ca19640d59769ac4598bcb43eaf428fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/CasinoParkTest.unity using Guid(ca19640d59769ac4598bcb43eaf428fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ef88ac8017c03a8a418da5a94f4f5cb4') in 0.0053743 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Materials/Material.mat
-  artifactKey: Guid(af4a834dcca8ca4408eaaf615d74edcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials/Material.mat using Guid(af4a834dcca8ca4408eaaf615d74edcd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a1c2e7ba7fb88616eb80554211bb59fd') in 0.0046779 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/Art/Gameplay/Podium/Silver.mat
+  artifactKey: Guid(324b0ad0669eed6469418edf2d186a2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Gameplay/Podium/Silver.mat using Guid(324b0ad0669eed6469418edf2d186a2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60f0e620e8945667be4b9e4300e91f04') in 0.0089984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/Characters/03 Taels/Taels.mat
+  artifactKey: Guid(634206cf18f1bb0449c3110a366eaeb5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/03 Taels/Taels.mat using Guid(634206cf18f1bb0449c3110a366eaeb5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ef6211b263008f6e3f4b8e2ee85f13b') in 0.0074671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Art/Characters/06 Roge da Bat/Roge.mat
+  artifactKey: Guid(4409cf1e088daae478a2382db954b2d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/06 Roge da Bat/Roge.mat using Guid(4409cf1e088daae478a2382db954b2d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b3a6e4889e9e69aac7897c42d9449af') in 0.0076074 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/Easter eggs/Picnic/Materials/Material.001.mat
+  artifactKey: Guid(a047e5bd58bd6ad4887fc6cfc011ce6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Easter eggs/Picnic/Materials/Material.001.mat using Guid(a047e5bd58bd6ad4887fc6cfc011ce6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '398cfa00793feeef238318c761ba3adf') in 0.0066479 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/Art/Environment/Lobby/Materials/Lobbyimage1.mat
-  artifactKey: Guid(33d8f392049c45c4a843526986cf5bf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Environment/Lobby/Materials/Lobbyimage1.mat using Guid(33d8f392049c45c4a843526986cf5bf3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0353d2f137751869dbc4c55fce8816b8') in 0.0067952 seconds
+  path: Assets/Art/Characters/14 Metal Sanic/Metal Sanic.mat
+  artifactKey: Guid(2c3ba655008b52e42992ab8cc6c354ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Characters/14 Metal Sanic/Metal Sanic.mat using Guid(2c3ba655008b52e42992ab8cc6c354ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b3019ce350ba96221114c3c4fc811296') in 0.0076307 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Art/Easter eggs/Picnic/Materials/ChipsBag.mat
-  artifactKey: Guid(6873edc8d2dd5ab4689ce0c4e37bd5e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Easter eggs/Picnic/Materials/ChipsBag.mat using Guid(6873edc8d2dd5ab4689ce0c4e37bd5e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a598c101b54be394580a9b126708a0d9') in 0.0063163 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scenes/Lobby/LightmapFar-0.exr
-  artifactKey: Guid(881ad2d2db0339a498e1224d405a828d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/LightmapFar-0.exr using Guid(881ad2d2db0339a498e1224d405a828d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddad7efb3aa1bbafd5ebea4829b64b8c') in 0.0173679 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Art/Gameplay/Podium/Gold.mat
-  artifactKey: Guid(f610cd3434c693045b033a486f241e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Gameplay/Podium/Gold.mat using Guid(f610cd3434c693045b033a486f241e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '018d931bbea634290370734e4c26843e') in 0.0076721 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scenes/Menu/Lightmap-1_comp_light.exr
-  artifactKey: Guid(73c7cf8bf7725c4469aa634e81d8a456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Menu/Lightmap-1_comp_light.exr using Guid(73c7cf8bf7725c4469aa634e81d8a456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b35e855b536a1a21eea543849b1db26') in 0.0186939 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Art/Characters/05 Shedew/Shedew.mat
-  artifactKey: Guid(5d66e63183aa4cf4882213543bfb2a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Characters/05 Shedew/Shedew.mat using Guid(5d66e63183aa4cf4882213543bfb2a52) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd781c10139f3364748fc0ee239efee79') in 0.0085386 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Art/Environment/Lobby/Materials/BlackFrame.mat
-  artifactKey: Guid(a46502ac584c9954f976fbb606671c53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Environment/Lobby/Materials/BlackFrame.mat using Guid(a46502ac584c9954f976fbb606671c53) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c92c8778088c413ba12784dd39f512a9') in 0.0046028 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Scenes/Track_SnowyMountain/ReflectionProbe-2.exr
-  artifactKey: Guid(b28d15a9caae03f4aaed4c98e6bca501) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_SnowyMountain/ReflectionProbe-2.exr using Guid(b28d15a9caae03f4aaed4c98e6bca501) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '999bc5161a008b449d9cf67024a0c5fd') in 0.0080374 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Scenes/Track_GreenHillZone/ReflectionProbe-1.exr
-  artifactKey: Guid(0f8c86b6628474d4996a6156af3ef8ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_GreenHillZone/ReflectionProbe-1.exr using Guid(0f8c86b6628474d4996a6156af3ef8ba) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b740f1441ba92e469a76e3ecd205e0e9') in 0.010051 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Art/Environment/Lobby/Materials/Cloth.mat
-  artifactKey: Guid(de3093246cf981c4c82309c56dae9b74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Environment/Lobby/Materials/Cloth.mat using Guid(de3093246cf981c4c82309c56dae9b74) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5292a9fba074f704f0ac97976edc254c') in 0.0174657 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Scenes/Lobby/LightmapNear-3.exr
-  artifactKey: Guid(ebc1c8965856fac498f5772a4c65b9e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Lobby/LightmapNear-3.exr using Guid(ebc1c8965856fac498f5772a4c65b9e4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c9a9d970052fd59823a0979fa49319d1') in 0.0183121 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Scenes/Track_GreenHillZone/Lightmap-3_comp_light.exr
-  artifactKey: Guid(0a09438ef791e1b4897c47dce0142663) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_GreenHillZone/Lightmap-3_comp_light.exr using Guid(0a09438ef791e1b4897c47dce0142663) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '012e853d2c1f5f6a6ec151d00d0b366c') in 0.0706047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Art/Characters/99 Super Sanic/SuperSanic.mat
-  artifactKey: Guid(ed9afe70cddfa64429bbcb920fa979f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Characters/99 Super Sanic/SuperSanic.mat using Guid(ed9afe70cddfa64429bbcb920fa979f4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '116bcf7a65f0c98468e241f883f65bc6') in 0.0069104 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scenes/Track_GreenHillZone/Lightmap-6_comp_light.exr
-  artifactKey: Guid(8baa44e87bb67bc4b862b700156edc75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_GreenHillZone/Lightmap-6_comp_light.exr using Guid(8baa44e87bb67bc4b862b700156edc75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '202f66b7d3bbc303e12b2ae5364b4bef') in 0.0675922 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Scripts/UI/OnlinePanel.cs
-  artifactKey: Guid(f0e33ebea88c741478eb839cc4da334e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scripts/UI/OnlinePanel.cs using Guid(f0e33ebea88c741478eb839cc4da334e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b65acce8fb7c3efc6330d88d454d31b6') in 0.0043688 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Art/Easter eggs/Picnic/Materials/Material.001.mat
-  artifactKey: Guid(a047e5bd58bd6ad4887fc6cfc011ce6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Easter eggs/Picnic/Materials/Material.001.mat using Guid(a047e5bd58bd6ad4887fc6cfc011ce6e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e460feb17e3d829b5ae2cc25acf4f26') in 0.0054569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scenes/Track_SnowyMountain/ReflectionProbe-6.exr
-  artifactKey: Guid(98f72fd76d2f46748880ec5a60ad6bd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Track_SnowyMountain/ReflectionProbe-6.exr using Guid(98f72fd76d2f46748880ec5a60ad6bd4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd460405188a8956490d79b3538508988') in 0.008358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Materials/Road.mat
-  artifactKey: Guid(8ea69a9f3efcdcd4e8e8a43d3238417d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials/Road.mat using Guid(8ea69a9f3efcdcd4e8e8a43d3238417d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23e027cf17a80a70152aae02d22e474b') in 0.0075669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 0.000020 seconds.
   path: Assets/Art/Easter eggs/Test Model/Materials/SanicTestModel.mat
   artifactKey: Guid(5d9088b95aa9a1f49bf649ffcabb4a69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Easter eggs/Test Model/Materials/SanicTestModel.mat using Guid(5d9088b95aa9a1f49bf649ffcabb4a69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '43f1d8ee6ff26b4836fb29cbb5570382') in 0.0394346 seconds
+Start importing Assets/Art/Easter eggs/Test Model/Materials/SanicTestModel.mat using Guid(5d9088b95aa9a1f49bf649ffcabb4a69) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eb38f284a107c69bdfe53db6a1cea04d') in 0.0131292 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Assemblies/Newtonsoft.Json.dll
-  artifactKey: Guid(c3d03d36071a19d469169be3f8a1406d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assemblies/Newtonsoft.Json.dll using Guid(c3d03d36071a19d469169be3f8a1406d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fe4efc53186726316b767cf89d900f7a') in 0.0042382 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000029 seconds.
+  path: Assets/Materials/Grass.mat
+  artifactKey: Guid(b22986f54136ea0479ea9be7c9f8f7fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materials/Grass.mat using Guid(b22986f54136ea0479ea9be7c9f8f7fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c5520fc24df76d92c7ae2e77646a30c') in 0.0117091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Scenes/Menu/LightmapFar-1.exr
-  artifactKey: Guid(bd26b1b69ab6fb64b822f01d55171b15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/Menu/LightmapFar-1.exr using Guid(bd26b1b69ab6fb64b822f01d55171b15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '39c38c680d9148393e215791cd91845d') in 0.0212947 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Art/Environment/01 Green Hill Zone/Materials/LighthouseGray.mat
-  artifactKey: Guid(d62aefe4d293a624f9d2d9bd768dc0db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Environment/01 Green Hill Zone/Materials/LighthouseGray.mat using Guid(d62aefe4d293a624f9d2d9bd768dc0db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0fc9fa1bc619d66bbbbcccbe8bec29a0') in 0.0076532 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Art/Environment/01 Green Hill Zone/Materials/Water_Tiled1000.mat
+  artifactKey: Guid(75a6a7865359bb84fa436bcda63d4451) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Art/Environment/01 Green Hill Zone/Materials/Water_Tiled1000.mat using Guid(75a6a7865359bb84fa436bcda63d4451) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1b0a30c2ac632e86abd540a5eb3d6024') in 0.0092597 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/Grass2.mat
+  artifactKey: Guid(d28468f768e617e4a8e14145c567d05c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materials/Grass2.mat using Guid(d28468f768e617e4a8e14145c567d05c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8cc079995477ab0b2132a21a7bbe0233') in 0.0091345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
   path: Assets/Art/Characters/07 Asspio/Asspio.mat
   artifactKey: Guid(02a6a5afb08f3a043940c8f1aaed2615) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Art/Characters/07 Asspio/Asspio.mat using Guid(02a6a5afb08f3a043940c8f1aaed2615) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f97559fb3d7b3aeeaf78d93e3daeb3bf') in 0.0113861 seconds
+Start importing Assets/Art/Characters/07 Asspio/Asspio.mat using Guid(02a6a5afb08f3a043940c8f1aaed2615) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e566abff10fa3a2cafd868b6941ab861') in 0.0074149 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
