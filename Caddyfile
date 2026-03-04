@@ -1,0 +1,35 @@
+:{$PORT}
+
+# Root folder is current directory (where your Unity build files are)
+root * .
+
+# Serve static files
+file_server
+
+# Compression for faster loading
+encode gzip zstd
+
+# Correct MIME types for Unity WebGL files
+@wasm_files {
+    path *.wasm
+}
+header @wasm_files Content-Type application/wasm
+
+@data_files {
+    path *.data *.mem *.symbols.json
+}
+header @data_files Content-Type application/octet-stream
+
+# Security headers including CSP
+header {
+    # Content Security Policy: allows Unity blobs, WebAssembly, inline scripts
+    Content-Security-Policy "default-src 'self'; img-src 'self' data: https: *; style-src 'self' 'unsafe-inline' https: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: * blob:; connect-src 'self' https: * blob:; font-src 'self' data: https: *; media-src 'self' https: *; object-src 'none'; frame-src 'self' https: * blob:;"
+    
+    # Optional: allow cross-origin isolation if Unity needs SharedArrayBuffer
+    Cross-Origin-Opener-Policy "same-origin"
+    Cross-Origin-Embedder-Policy "require-corp"
+    
+    # Some basic security headers
+    Referrer-Policy "no-referrer"
+    X-Content-Type-Options "nosniff"
+}
